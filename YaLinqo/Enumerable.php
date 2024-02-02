@@ -44,6 +44,7 @@ class Enumerable implements \IteratorAggregate
      * {@inheritdoc}
      * @return \Iterator
      */
+    #[\ReturnTypeWillChange]
     public function getIterator(): \Traversable
     {
         return $this->iterator;
